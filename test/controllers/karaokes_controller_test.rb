@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class KaraokeControllerTest < ActionDispatch::IntegrationTest
+class KaraokesControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end

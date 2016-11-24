@@ -1,0 +1,55 @@
+<h1>Add karaoke place</h1>
+
+<%= form_for @karaoke do |f| %>
+  <% if @karaoke.errors.any? %>
+    <div id="error_explanation">
+      <h2>The form contains <%= pluralize(@karaoke.errors.count, "error") %>.</h2>
+      <ul>
+      <% @karaoke.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <%= f.label :name %>
+  <%= f.text_field :name, class: 'form-control' %>
+
+  <%= f.label :drink_price %>
+  <%= f.text_field :drink_price, class: 'form-control' %>
+
+  <%= f.label :day %>
+  <%= f.text_field :day, class: 'form-control' %>
+
+  <%= f.label :day_price %>
+  <%= f.text_field :day_price, class: 'form-control' %>
+
+  <%= f.label :day_price_weekend %>
+  <%= f.text_field :day_price_weekend, class: 'form-control' %>
+
+  <%= f.label :day_price_freetime %>
+  <%= f.text_field :day_price_freetime, class: 'form-control' %>
+
+  <%= f.label :day_price_freetime_weekend %>
+  <%= f.text_field :day_price_freetime_weekend, class: 'form-control' %>
+
+  <%= f.label :night %>
+  <%= f.text_field :night, class: 'form-control' %>
+
+  <%= f.label :night_price %>
+  <%= f.text_field :night_price, class: 'form-control' %>
+
+  <%= f.label :night_price_weekend %>
+  <%= f.text_field :night_price_weekend, class: 'form-control' %>
+
+  <%= f.label :night_price_freetime %>
+  <%= f.text_field :night_price_freetime, class: 'form-control' %>
+
+  <%= f.label :night_price_freetime_weekend %>
+  <%= f.text_field :night_price_freetime_weekend, class: 'form-control' %>
+
+  <%= f.label :conditions %>
+  <%= f.text_field :conditions, class: 'form-control' %>
+
+  <%= f.submit "Add karaoke place", class: 'btn btn-primary' %>
+<% end %>

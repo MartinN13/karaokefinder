@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161122113510) do
+ActiveRecord::Schema.define(version: 20161123102526) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -18,12 +18,12 @@ ActiveRecord::Schema.define(version: 20161122113510) do
   create_table "karaokes", force: :cascade do |t|
     t.string   "name"
     t.integer  "drink_price"
-    t.time     "day"
+    t.string   "day"
     t.integer  "day_price"
     t.integer  "day_price_weekend"
     t.integer  "day_price_freetime"
     t.integer  "day_price_freetime_weekend"
-    t.time     "night"
+    t.string   "night"
     t.integer  "night_price"
     t.integer  "night_price_weekend"
     t.integer  "night_price_freetime"
